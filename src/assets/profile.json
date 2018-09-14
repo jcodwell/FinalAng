@@ -1,4 +1,4 @@
-
+[
   {
     "id": 1,
     "Profile": {
@@ -8,11 +8,28 @@
       "Address": "1234 Not",
       "Desription": "I love Chocolate"
                 }
-   
-  
-    
+   },
+   {
+    "id": 2,
+    "Profile": {
+      "name": "Sidharth Dewan",
+      "coverImage": "/assets/sid.jpg",
+      "Email": "sidharthdewan@me.com",
+      "Address": "456!!",
+      "Desription": "I don't like Jada"
+                }     
+   },
+   {
+    "id": 3,
+    "Profile": {
+      "name": "Joseph Park",
+      "coverImage":"/assets/joseph.jpg",
+      "Email": "jp@gmail.com",
+      "Address": "1234 Not",
+      "Desription": "Shh.. I am in love with Jada"
+                }     
    }
-    
+  ]  
 
 
 

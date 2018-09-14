@@ -18,8 +18,13 @@ export class ProfileInfoService {
   
   
 constructor(private _http: Http) { }
-  getprofile(id:number): Observable<Profile> {
-    return this._http.get(this._profileUrl).pipe(map((response) => <Profile>response.json()));
-  }
+
+ /*  getprofile(): Observable<any[]> {
+    return this._http.get(this._profileUrl)
+    .pipe(map((response: any[]) => {
+      console.log(response);
+      response;
+    } ));
+  } */
 
 }

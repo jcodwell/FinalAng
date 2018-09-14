@@ -1,6 +1,14 @@
         
   <div class="row">
-        <div class="column">
+
+        <div class="column" *ngFor="let Profile of ProfileInfo" >
+                <img src="{{Profile?.Profile.coverImage}}" alt="product image"/> 
+                <p>{{Profile?.Profile.name}}</p>
+                <p>{{Profile?.Profile.Email}}</p>
+                <p>{{Profile?.Profile.Address}}</p>
+                <button class="btn" class="nav-item nav-link-edit" [routerLink]="['']" >More Info </button>
+        </div>
+        <!-- <div class="column">
                 <img src={{ProfileInfo?.Profile.coverImage}} alt="product image"/> 
                 <p>{{ProfileInfo?.Profile.name}}</p>
                 <p>{{ProfileInfo?.Profile.Email}}</p>
@@ -13,14 +21,7 @@
                 <p>{{ProfileInfo?.Profile.Email}}</p>
                 <p>{{ProfileInfo?.Profile.Address}}</p>
                 <button class="btn">More Info </button>
-        </div>
-        <div class="column">
-                <img src={{ProfileInfo?.Profile.coverImage}} alt="product image"/> 
-                <p>{{ProfileInfo?.Profile.name}}</p>
-                <p>{{ProfileInfo?.Profile.Email}}</p>
-                <p>{{ProfileInfo?.Profile.Address}}</p>
-                <button class="btn">More Info </button>
-        </div>
+        </div> -->
       </div>
 
    
