@@ -1,0 +1,5 @@
+[
+    {"image": "assets/sid.jpg", "name": "Sid Dewan", "location": "New Delhi, India", "email": "sid.dewan@capgemini.com", "description": "blah blah blah blah"},
+    {"image": "assets/jada.jpg", "name": "Jada Codwell", "location": "Dallas, Texas", "email": "jada.codwell@capgemini.com", "description": "blah blah blah " },
+    {"image": "assets/joseph.jpg", "name": "Joseph Park", "location": "Atlanta, Georgia", "email": "joseph.park@capgemini.com", "description": "blah blah blah "}
+]   
