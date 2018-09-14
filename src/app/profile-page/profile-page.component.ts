@@ -14,8 +14,10 @@ export class ProfilePageComponent implements OnInit {
   constructor(private _profileinfoservice: ProfileInfoService) { }
 
   ngOnInit() {
+
+
     this._profileinfoservice.getprofile(1).subscribe(response => this.ProfileInfo = response);
-   
+
   }
 
 }

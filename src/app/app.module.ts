@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { IndividualProfilePageComponent } from './individual-profile-page/individual-profile-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopMenuComponent,
     ProfilePageComponent,
-    HomePageComponent
+    HomePageComponent,
+    IndividualProfilePageComponent
   ],
   imports: [
     BrowserModule,
