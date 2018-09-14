@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ProfileInfoService } from '../profile-info.service';
-import { Profile} from '../profile';
+import {Profile} from '../profile';
+
 @Component({
   selector: 'app-profile-page',
   templateUrl: './profile-page.component.html',
@@ -14,7 +15,7 @@ export class ProfilePageComponent implements OnInit {
 
   ngOnInit() {
     this._profileinfoservice.getprofile(1).subscribe(response => this.ProfileInfo = response);
-
+   
   }
 
 }
