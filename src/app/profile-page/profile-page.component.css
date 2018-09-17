@@ -1,20 +1,52 @@
 * {
     box-sizing: border-box;
+    
 }
 
-
+.btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: white;
+    display: inline-block;
+   
+    
+}
+ .btn:hover {
+    background-color:gray;
+}
 .column {
+    border-color: white;
     float: left;
     width: 33.33%;
-    padding: 10px;
-    height: 300px;
+    padding: 10px; 
+    height: 400px;
+    border-style: solid; 
+    background-color: black  
+}
+p.row {
+    border-collapse: separate;
+    border-spacing: 1px, 1px;
+    background-color: black;
+    color: white;
 }
 
+
+
+#text-box{
+    border-style: solid;
+    border-color: white;
+    height: 210px;
+}
 
 .row:after {
     content: "";
     display: table;
     clear: both;
+    
+   
 }
 
 
@@ -23,3 +55,4 @@
         width: 100%;
     }
 }
+

@@ -1,27 +1,21 @@
         
-  <div class="row">
+ 
+ 
+ <div class="row">
 
-        <div class="column" *ngFor="let Profile of ProfileInfo" >
+   <div class="column" *ngFor="let Profile of ProfileInfo" >
+                
                 <img src="{{Profile?.Profile.coverImage}}" alt="product image"/> 
-                <p>{{Profile?.Profile.name}}</p>
-                <p>{{Profile?.Profile.Email}}</p>
-                <p>{{Profile?.Profile.Address}}</p>
-                <button class="btn" class="nav-item nav-link-edit" [routerLink]="['']" >More Info </button>
-        </div>
-        <!-- <div class="column">
-                <img src={{ProfileInfo?.Profile.coverImage}} alt="product image"/> 
-                <p>{{ProfileInfo?.Profile.name}}</p>
-                <p>{{ProfileInfo?.Profile.Email}}</p>
-                <p>{{ProfileInfo?.Profile.Address}}</p>
-                <button class="btn">More Info </button>
-        </div>
-        <div class="column">
-                <img src={{ProfileInfo?.Profile.coverImage}} alt="product image"/> 
-                <p>{{ProfileInfo?.Profile.name}}</p>
-                <p>{{ProfileInfo?.Profile.Email}}</p>
-                <p>{{ProfileInfo?.Profile.Address}}</p>
-                <button class="btn">More Info </button>
-        </div> -->
-      </div>
+        <div id="text-box"> 
+                <p class="row">{{Profile?.Profile.name}}</p>
+                <p class="row">{{Profile?.Profile.Email}}</p>
+                <p class="row">{{Profile?.Profile.Address}}</p>
+         </div>
+   </div>
+ </div>
+ <br>
+<br>
+ <div class="btn"> <button class="btn" [routerLink]="['/desription']">More Info </button></div>
+
 
    

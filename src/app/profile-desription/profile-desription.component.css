@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.column {
+    background-color: black;
+    border-style: solid;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+   
+}
+
+p.row {
+
+background-color: black;
+color: white; 
+
+}
+p.row:hover{
+    background-color:gray;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+

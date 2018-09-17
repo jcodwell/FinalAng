@@ -2,15 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import {ProfileInfoService } from '../profile-info.service';
 import {Profile} from '../profile';
 
+
 const staticProfiles = [
   {
     "id": 1,
     "Profile": {
       "name": "Jada Codwell",
       "coverImage": "/assets/jada.jpg",
-      "Email": "jada.codwell@gmail.com",
-      "Address": "1234 Not",
-      "Desription": "I love Chocolate"
+      "Desription": "About Me: I love Chocolate"
                 }
    },
    {
@@ -18,9 +17,7 @@ const staticProfiles = [
     "Profile": {
       "name": "Sidharth Dewan",
       "coverImage": "/assets/sid.jpg",
-      "Email": "sidharthdewan@me.com",
-      "Address": "456!!",
-      "Desription": "I don't like Jada"
+      "Desription": "About Me: I don't like Jada"
                 }     
    },
    {
@@ -28,29 +25,24 @@ const staticProfiles = [
     "Profile": {
       "name": "Joseph Park",
       "coverImage": "/assets/joseph.jpg",
-      "Email": "jp@gmail.com",
-      "Address": "1234 Not",
-      "Desription": "Shh.. I am in love with Jada"
+      "Desription":"About Me: I like Jada"
                 }     
    }
   ]; 
 
 @Component({
-  selector: 'app-profile-page',
-  templateUrl: './profile-page.component.html',
-  styleUrls: ['./profile-page.component.css']
+  selector: 'app-profile-desription',
+  templateUrl: './profile-desription.component.html',
+  styleUrls: ['./profile-desription.component.css']
 })
-
-export class ProfilePageComponent implements OnInit {
-
+export class ProfileDesriptionComponent implements OnInit {
   ProfileInfo: any[];
 
   constructor(private _profileinfoservice: ProfileInfoService) { }
 
   ngOnInit() {
-  
-   this.ProfileInfo = staticProfiles;
 
+   this.ProfileInfo = staticProfiles;
 
   }
 

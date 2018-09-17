@@ -8,18 +8,22 @@ import { AppComponent } from './app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { ProfileDesriptionComponent } from './profile-desription/profile-desription.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopMenuComponent,
     ProfilePageComponent,
-    HomePageComponent
+    HomePageComponent,
+    ProfileDesriptionComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [ProfileInfoService],
   bootstrap: [AppComponent]
